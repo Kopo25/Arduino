@@ -23,7 +23,7 @@ int potVal2;
 
 int mode = 0;
 
-// int z1;     // counter
+// int z1;     // counter allalaadimise riba ajaks
 
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);   // initialize the library with the numbers of the interface pins
 
@@ -257,11 +257,11 @@ void loop() {
       lcd.setCursor(0, 0);
       lcd.print("  Pump #3");
       
-     digitalWrite(PUMP3, HIGH);  //Pump3 hakkab tööle
+     digitalWrite(PUMP3, HIGH);         //Pump3 hakkab tööle
        delay (time6*100);   		// Kui pump pumpab 0,5L/s siis tehakse vastavalt nii pikk viivis
-     digitalWrite(PUMP3, LOW);       //Pump3 lõpetab töö
+     digitalWrite(PUMP3, LOW);         //Pump3 lõpetab töö
          
-    lcd.clear();     //Algne txt
+    lcd.clear();                      //Algne txt toob tagasi eelńevad ekraanid
     lcd.setCursor(1, 0);
     lcd.print(data1[0]);
     lcd.print("p");
